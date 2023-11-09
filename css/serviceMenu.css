@@ -1,0 +1,84 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background:#71FFDB;
+	font-family:system-ui;
+}
+
+.siteHeader{
+	
+	background:#00B889;
+}
+
+.siteHeader .Container{
+	width:80%;
+	margin:0 auto;
+}
+
+.siteHeader .Container .navBar{
+	display:flex;
+	
+	
+}
+
+.siteHeader .Container .navBar .logo{
+	flex-basis:120px;
+	
+}
+.siteHeader .Container .navBar .logo img{
+	width:100%;
+	
+} 
+
+.siteHeader .Container .navBar .menu{
+	flex:1;
+	display:flex;
+	align-items:center;
+	justify-content:end;
+	padding:10px;
+}
+.menu{
+	list-style:none;
+}
+.menu ul li{
+	margin:10px;
+	display:inline;
+	position:relative;
+}
+
+.menu ul li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:+18;
+	font-weight:bold;
+	
+}
+.menu ul li .dropdown{
+	display:none;
+	width:100px;
+	
+}
+
+.menu ul li:hover .dropdown{
+	position:absolute;
+	top:30px;
+	left:0;
+	background:#fff;
+	padding:6px;
+	display:block!important;
+	box-shadow:0px 1px 12px #00000012;
+	border-radius:5px;
+}
+.menu ul li:hover .dropdown li a{
+	color:black;
+	padding:5px;
+	display:block;
+}
+.menu ul li:hover .dropdown li a:hover{
+	background:gray;
+	color:#fff;
+}
